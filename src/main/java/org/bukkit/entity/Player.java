@@ -626,4 +626,43 @@ public interface Player extends HumanEntity, Conversable, CommandSender, Offline
      * @throws IllegalArgumentException Thrown if the URL is too long.
      */
     public void setTexturePack(String url);
+
+    /**
+     * If the player is sleeping, wakes up the player
+     *
+     * @param setRespawn whether to set the respawn location or not
+     */
+    public void wake(boolean setRespawn);
+
+    /**
+     * Attempts to make the player sleep in their bed.
+     *
+     * @return true if the player can sleep, false otherwise
+     */
+    public boolean sleep();
+
+    /**
+     * Attempts to make the player sleep in their bed.
+     *
+     * @param limitDistance whether distance between the player and bed should be limited
+     * @return true if the player can sleep, false otherwise
+     */
+    public boolean sleep(boolean limitDistance);
+
+    /**
+     * Attempts to make the player sleep in the bed at the given location.
+     *
+     * @param bed the location of the bed
+     * @return true if the player can sleep, false otherwise
+     */
+    public boolean sleep(Location bed);
+
+    /**
+     * Attempts to make the player sleep in the bed at the given location.
+     *
+     * @param bed the location of the bed
+     * @param limitDistance whether distance between the player and bed should be limited
+     * @return true if the player can sleep, false otherwise
+     */
+    public boolean sleep(Location bed, boolean limitDistance);
 }
