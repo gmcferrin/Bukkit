@@ -1,12 +1,9 @@
 package org.bukkit.event.entity;
+
 import org.bukkit.Location;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Firework;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
-import org.bukkit.event.entity.EntityEvent;
-
-import java.util.List;
 
 /**
  * Called when a firework explodes
@@ -31,9 +28,9 @@ public class FireworkExplodeEvent extends EntityEvent implements Cancellable {
     }
 
     /**
-     * Returns the location where the explosion happened.
-     * If it's not possible to get this value from the Firework itself
-     * @return The location of the firework explosion
+     * Get the location of where the firework exploded.
+     *
+     * @return the location of the explosion
      */
     public Location getLocation() {
         return location;
