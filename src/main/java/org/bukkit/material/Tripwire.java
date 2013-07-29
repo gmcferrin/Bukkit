@@ -37,7 +37,7 @@ public class Tripwire extends MaterialData {
             dat |= 0x4;
         }
         setData((byte) dat);
-    }    
+    }
 
     /**
      * Test if object triggering this tripwire directly

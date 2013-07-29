@@ -13,7 +13,7 @@ public interface Villager extends Ageable, NPC {
 
     /**
      * Sets the new profession of this villager.
-     * 
+     *
      * @param profession New profession.
      */
     public void setProfession(Profession profession);
