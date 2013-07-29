@@ -10,7 +10,7 @@ public interface Villager extends Ageable, NPC {
      * @return Current profession.
      */
     public Profession getProfession();
-    
+
     /**
      * Sets the new profession of this villager.
      * 

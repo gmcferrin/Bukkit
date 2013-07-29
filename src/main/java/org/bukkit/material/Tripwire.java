@@ -6,7 +6,7 @@ import org.bukkit.Material;
  * Represents the tripwire
  */
 public class Tripwire extends MaterialData {
-    
+
     public Tripwire() {
         super(Material.TRIPWIRE);
     }
@@ -26,7 +26,7 @@ public class Tripwire extends MaterialData {
     public boolean isActivated() {
         return (getData() & 0x4) != 0;
     }
-    
+
     /**
      * Set tripwire activated state
      * @param act - true if activated, false if not
@@ -38,7 +38,7 @@ public class Tripwire extends MaterialData {
         }
         setData((byte) dat);
     }    
-    
+
     /**
      * Test if object triggering this tripwire directly
      * @return true if object activating tripwire, false if not

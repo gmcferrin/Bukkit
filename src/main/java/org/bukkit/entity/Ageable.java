@@ -48,7 +48,7 @@ public interface Ageable extends Creature {
      * @return return true if the animal is an adult
      */
     public boolean isAdult();
-    
+
     /**
      * Return the ability to breed of the animal.
      *

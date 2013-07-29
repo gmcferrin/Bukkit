@@ -62,7 +62,7 @@ public class RegisteredListener {
         executor.execute(listener, event);
     }
 
-     /**
+    /**
      * Whether this listener accepts cancelled events
      *
      * @return True when ignoring cancelled events
